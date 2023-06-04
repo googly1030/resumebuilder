@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="header">
+        <div class="text-box">
+            <h1>Build a resume that will get you hired</h1>
+            <p>Make your perfect resume in minutes with free templates, samples and examples.</p>
+        </div>
+    </section>
+    <section class="main-content">
+
+        <div id="basic-info" style="display: none;">
+            <h2>Basic Info</h2>
+            <div>
+                <input type="text" name="Full name" placeholder="Full Name">
+            </div>
+           <div>
+            <input type="text" name="Mobile Number" placeholder="Mobile Number">
+           </div>
+           <div>
+            <input type="text" name="DOB" placeholder="DOB">
+           </div>
+           <div>
+            <input type="text" name="Title" placeholder="Title">
+           </div>
+           <div>
+            <input type="email" name="Email" placeholder="Email">
+           </div>
+              <div>
+                <textarea placeholder="address" name="address" id="address" cols="40" rows="10"></textarea>
+              </div>
+              <button>save</button>
+        </div>
+
+
+
+
+        <div id="education" style="display: none;">
+            <h2>Education</h2>
+            <div>
+                <label for="">INSTITUTE NAME</label>
+                <input type="text" name="institute name" placeholder="institute name">
+            </div>
+            <div>
+                <label for="">STATE</label>
+                <input type="text" name="STATE" id="">
+            </div>
+            <div>
+                <label for="">DEGREE</label>
+                <input type="text" name="DEGREE" id="">
+            </div>
+            <div>
+                <label for="">FIELD OF STUDY</label>
+                <input type="text" name="FIELD OF STUDY" id="">
+            </div>
+            <div>
+                <label for="">START DATE</label>
+                <input type="date" name="START DATE" id="">
+            </div>
+            <div>
+                <label for="">PERCENTAGE/CGPA</label>
+                <input type="number" name="PERCENTAGE/CGPA" id="">
+            </div>
+            <button>save</button>
+        </div>
+
+
+
+
+        <div id="work-experience" style="display: none;">
+            <h2>Work Experience</h2>
+            <div>
+                <label for="">EMPLOYER</label>
+                <input type="text" name="EMPLOYER" placeholder="EMPLOYER">
+            </div>
+            <div>
+                <label for="">JOB TITLE</label>
+                <input type="text" name="JOB TITLE" id="">
+            </div>
+            <div>
+                <label for="">START DATE</label>
+                <input type="date" name="START DATE" id="">
+            </div>
+            <div>
+                <label for="">STATE</label>
+                <input type="TEXT" name="STATE" id="">
+            </div>
+            <div>
+                <label for="">DISCRIPTION</label>
+                <textarea name="DISCRIPTION" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button>save</button>
+        </div>
+
+
+
+        <div id="skills" style="display: none;">
+            <h2>Skills</h2>
+            <div>
+                <p>YOUR ADDED SKILLS</p>
+                <input type="text" name="skill" placeholder="Enter a skill">
+                <button id="add" onclick="addSkill()">Add Skill</button>
+            </div>
+            <ul id="skill-list"></ul>
+            <div>
+                <button id="add1">save</button>
+            </div>
+        </div>
+
+
+
+        <div id="achievements" style="display: none;">
+            <h2>Achievements</h2>
+            <h3>Enter a brief introduction about your achievements.</h3>
+            <div>
+               <label for="">Achievements</label>
+                <textarea name="Achievements" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button>save</button>
+        </div>
+
+
+        <div id="projects" style="display: none;">
+            <h2>Projects</h2>
+            <h3>Highlight some of your major Projects. (Maximum 3)</h3>
+            <div>
+                <label for="">Project Title </label>
+                <input type="text" name="Project Title" id="">
+                </div>
+
+            <div>
+                <label for="">Project URL</label>
+                <input type="text" name="Project URL" id="">
+            </div>
+
+            <div>
+                <label for="">Project Description</label>
+                <textarea name="Project Description" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button>save</button>
+               
+            </div>
+        </div>
+
+
+
+
+        <div id="social-links" style="display: none;">
+            <h2>Social Links</h2>
+           <div>
+            <label for="">Github</label>
+            <input type="text" name="Github" id="">
+           </div>
+           <div>
+                <label for="">LinkedIn</label>
+                <input type="text" name="LinkedIn" id="">
+            </div>
+            <div>
+                <button id="socialbutton">save</button>
+            </div>
+            <div>
+                <button id="downloadButton">Download Resume</button>
+            </div>
+        </div>
+
+
+        <div id="download" >
+    
+        </div>
+    </section>
+
+
+    <section class="side-bar">
+        <h1>Make your resume</h1>
+        <ul>
+            <li><a href="#template" onclick="displayContent('template')">Choose template</a></li>
+            <li><a href="#basic-info" onclick="displayContent('basic-info')">Basic info</a></li>
+            <li><a href="#education" onclick="displayContent('education')">education</a></li>
+            <li><a href="#work-experience" onclick="displayContent('work-experience')">Work Experience</a></li>
+            <li><a href="#skills" onclick="displayContent('skills')">Skills</a></li>
+            <li><a href="#achievements" onclick="displayContent('achievements')">Achievements</a></li>
+            <li><a href="#projects" onclick="displayContent('projects')">Projects</a></li>
+            <li><a href="#social-links" onclick="displayContent('social-links')">Social Links</a></li>
+            <li><a href="#download" onclick="displayContent('download')">Download</a></li>
+        </ul>
+    </section>
+    <script src="app.js"></script>  
+</body>
+</html>

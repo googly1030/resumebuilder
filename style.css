@@ -1,0 +1,303 @@
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #242020;
+    color: aliceblue;
+    padding: 1%;
+    text-align: center;
+}
+
+.side-bar {
+    width: 20%;
+    height: 90vh;
+    background-color: #242020;
+}
+
+.side-bar a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.side-bar a:hover {
+    color: #1bb4e2;
+    text-decoration: none;
+}
+
+.side-bar li {
+    padding: 5%;
+    font-size: 1.5em;
+}
+
+.side-bar h1 {
+    padding: 5%;
+    font-size: 2em;
+    color: #20aad4;
+}
+
+.main-content {
+    margin-left: 20%;
+    flex: 1;
+}
+
+#basic-info  {
+    width: 50%;
+    height: 5vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#basic-info input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 5%;
+}
+
+#basic-info button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#basic-info textarea {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#education {
+    width: 50%;
+    height: 5vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#education input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#education button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#work-experience {
+    width: 50%;
+    height: 5vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#work-experience input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#work-experience button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+#work-experience textarea {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#achievements
+{
+    width: 50%;
+    height: 5vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+#skills {
+    width: 50%;
+    height: 5vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#skills input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#add {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#add1
+{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+ 
+#skills textarea {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#achievements input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#achievements button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#achievements textarea {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#projects {
+    width: 50%;
+    height: 5vh;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#projects input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#projects button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#projects textarea {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#social-links
+{
+    width: 50%;
+    height: 5vh;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+#social-links input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+
+
+#downloadButton 
+{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+
+#socialbutton
+{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+
+}
+
