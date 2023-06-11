@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <section class="header">
@@ -15,8 +14,10 @@
             <p>Make your perfect resume in minutes with free templates, samples and examples.</p>
         </div>
     </section>
+
     <section class="main-content">
 
+      
         <div id="basic-info" style="display: none;">
             <h2>Basic Info</h2>
             <div>
@@ -39,35 +40,34 @@
               </div>
               <button>save</button>
         </div>
-
+    
 
 
 
         <div id="education" style="display: none;">
             <h2>Education</h2>
             <div>
-                <label for="">INSTITUTE NAME</label>
-                <input type="text" name="institute name" placeholder="institute name">
+                <input type="text" name="institute name" placeholder="Institute name">
             </div>
             <div>
-                <label for="">STATE</label>
-                <input type="text" name="STATE" id="">
+               
+                <input type="text" name="STATE" id="" placeholder="STATE">
             </div>
             <div>
-                <label for="">DEGREE</label>
-                <input type="text" name="DEGREE" id="">
+             
+                <input type="text" name="DEGREE" id="" placeholder="DEGREE">
             </div>
             <div>
-                <label for="">FIELD OF STUDY</label>
-                <input type="text" name="FIELD OF STUDY" id="">
+              
+                <input type="text" name="FIELD OF STUDY" id="" placeholder="FIELD OF STUDY"> 
             </div>
             <div>
-                <label for="">START DATE</label>
-                <input type="date" name="START DATE" id="">
+               
+                <input type="date" name="START DATE" id="" placeholder="START DATE">
             </div>
             <div>
-                <label for="">PERCENTAGE/CGPA</label>
-                <input type="number" name="PERCENTAGE/CGPA" id="">
+              
+                <input type="number" name="PERCENTAGE/CGPA" id="" placeholder="PERCENTAGE/CGPA"> 
             </div>
             <button>save</button>
         </div>
@@ -78,24 +78,23 @@
         <div id="work-experience" style="display: none;">
             <h2>Work Experience</h2>
             <div>
-                <label for="">EMPLOYER</label>
-                <input type="text" name="EMPLOYER" placeholder="EMPLOYER">
+                <input type="text" name="EMPLOYER" placeholder="EMPLOYER" >
             </div>
             <div>
-                <label for="">JOB TITLE</label>
-                <input type="text" name="JOB TITLE" id="">
+               
+                <input type="text" name="JOB TITLE" id="" placeholder="JOB TITLE">
             </div>
             <div>
-                <label for="">START DATE</label>
-                <input type="date" name="START DATE" id="">
+                
+                <input type="date" name="START DATE" id="" placeholder="START DATE">
             </div>
             <div>
-                <label for="">STATE</label>
-                <input type="TEXT" name="STATE" id="">
+                
+                <input type="TEXT" name="STATE" id="" placeholder="STATE">
             </div>
             <div>
-                <label for="">DISCRIPTION</label>
-                <textarea name="DISCRIPTION" id="" cols="30" rows="5"></textarea>
+               
+                <textarea name="DISCRIPTION" id="" cols="30" rows="5" placeholder="DISCRIPTION"></textarea>
             </div>
             <button>save</button>
         </div>
@@ -103,9 +102,8 @@
 
 
         <div id="skills" style="display: none;">
-            <h2>Skills</h2>
-            <div>
-                <p>YOUR ADDED SKILLS</p>
+            <div id="skill-center">
+               <label for="">SKILLS</label>
                 <input type="text" name="skill" placeholder="Enter a skill">
                 <button id="add" onclick="addSkill()">Add Skill</button>
             </div>
@@ -121,8 +119,8 @@
             <h2>Achievements</h2>
             <h3>Enter a brief introduction about your achievements.</h3>
             <div>
-               <label for="">Achievements</label>
-                <textarea name="Achievements" id="" cols="30" rows="10"></textarea>
+              
+                <textarea placeholder="Achievements" name="Achievements" id="" cols="30" rows="10"></textarea>
             </div>
             <button>save</button>
         </div>
@@ -132,18 +130,14 @@
             <h2>Projects</h2>
             <h3>Highlight some of your major Projects. (Maximum 3)</h3>
             <div>
-                <label for="">Project Title </label>
-                <input type="text" name="Project Title" id="">
-                </div>
-
+                <input type="text" name="Project Title" id="" placeholder="PROJECT TITLE">
+            </div>
             <div>
-                <label for="">Project URL</label>
-                <input type="text" name="Project URL" id="">
+                <input type="text" name="Project URL" id="" placeholder="PROJECT URL">
             </div>
 
             <div>
-                <label for="">Project Description</label>
-                <textarea name="Project Description" id="" cols="30" rows="10"></textarea>
+                <textarea name="Project Description" id="" cols="30" rows="10" placeholder="Project Description"></textarea>
             </div>
             <div>
                 <button>save</button>
@@ -157,12 +151,12 @@
         <div id="social-links" style="display: none;">
             <h2>Social Links</h2>
            <div>
-            <label for="">Github</label>
-            <input type="text" name="Github" id="">
+            
+            <input type="text" name="Github" id="" placeholder="Github">
            </div>
            <div>
-                <label for="">LinkedIn</label>
-                <input type="text" name="LinkedIn" id="">
+              
+                <input type="text" name="LinkedIn" id="" placeholder="LinkedIn"> 
             </div>
             <div>
                 <button id="socialbutton">save</button>
@@ -182,7 +176,7 @@
     <section class="side-bar">
         <h1>Make your resume</h1>
         <ul>
-            <li><a href="#template" onclick="displayContent('template')">Choose template</a></li>
+            
             <li><a href="#basic-info" onclick="displayContent('basic-info')">Basic info</a></li>
             <li><a href="#education" onclick="displayContent('education')">education</a></li>
             <li><a href="#work-experience" onclick="displayContent('work-experience')">Work Experience</a></li>
@@ -190,7 +184,7 @@
             <li><a href="#achievements" onclick="displayContent('achievements')">Achievements</a></li>
             <li><a href="#projects" onclick="displayContent('projects')">Projects</a></li>
             <li><a href="#social-links" onclick="displayContent('social-links')">Social Links</a></li>
-            <li><a href="#download" onclick="displayContent('download')">Download</a></li>
+            
         </ul>
     </section>
     <script src="app.js"></script>  
