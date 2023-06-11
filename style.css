@@ -1,15 +1,15 @@
 .header {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background-color: #242020;
-    color: aliceblue;
+    color: rgb(6, 105, 192);
     padding: 1%;
     text-align: center;
+    
 }
-
 .side-bar {
     width: 20%;
-    height: 90vh;
+    height: 70vh;
     background-color: #242020;
 }
 
@@ -24,8 +24,9 @@
 }
 
 .side-bar li {
-    padding: 5%;
+    padding: 7%;
     font-size: 1.5em;
+
 }
 
 .side-bar h1 {
@@ -37,15 +38,26 @@
 .main-content {
     margin-left: 20%;
     flex: 1;
+    padding: 1%;
+   
+   
 }
 
 #basic-info  {
     width: 50%;
-    height: 5vh;
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-left: 8%;
+    position: absolute;
+    bottom: 8%;
+   
 }
+#basic-info h2
+{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5%;
+    margin-right: 10%;
 
+}
 #basic-info input {
     width: 100%;
     height: 5vh;
@@ -70,22 +82,29 @@
 #basic-info textarea {
     width: 100%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 #education {
     width: 50%;
-    height: 5vh;
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-left: 8%;
+    position: absolute;
+    bottom: 8%;
+    
 }
 
 #education input {
     width: 100%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 5%;
 }
+#education h2
+{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5%;
 
+}
 #education button {
   background-color: #4CAF50;
   color: white;
@@ -103,15 +122,15 @@
 
 #work-experience {
     width: 50%;
-    height: 5vh;
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-left: 8%;
+    position: absolute;
+    bottom: 8%;
 }
 
 #work-experience input {
     width: 100%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 #work-experience button {
@@ -131,45 +150,99 @@
 #work-experience textarea {
     width: 100%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 5%;
 }
+#work-experience h2
+{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5%;
+
+} 
+#skills {
+    width: 50%;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5%;
+    color: #333;
+}
+
+#skills input {
+    width: 80%;
+    height: 5vh;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#skills label {
+    margin-top: 5%;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+#add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: 45%;
+  }
+  
+  #add1 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+  }
+  
+
 
 #achievements
 {
     width: 50%;
-    height: 5vh;
-    margin-left: 30%;
-    margin-top: 5%;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#skills {
-    width: 50%;
-    height: 5vh;
-    margin-left: 30%;
-    margin-top: 5%;
-}
-
-#skills input {
-    width: 100%;
-    height: 5vh;
-    margin-top: 1%;
-}
-
-#add {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 4px;
-}
-
-#add1
+#achievements button
 {
   background-color: #4CAF50;
   color: white;
@@ -184,120 +257,177 @@
   transition-duration: 0.4s;
   border-radius: 4px;
 }
- 
-#skills textarea {
+
+#achievements textarea 
+{
     width: 100%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
-#achievements input {
-    width: 100%;
-    height: 5vh;
-    margin-top: 1%;
+#achievements h2
+{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5%;
 }
 
-#achievements button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 4px;
-}
-
-#achievements textarea {
-    width: 100%;
-    height: 5vh;
-    margin-top: 1%;
+#achievements h3
+{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5%;
 }
 
 #projects {
     width: 50%;
-    height: 5vh;
-    margin-left: 30%;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
     margin-top: 5%;
+    color: #333;
 }
 
-#projects input {
-    width: 100%;
+#projects input , #projects textarea{
+    width: 80%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 10px; /* Adjust the margin-top value as needed */
+    margin-left: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
 }
 
+#projects label {
+    margin-top: 5%;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
 #projects button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
-#projects textarea {
-    width: 100%;
-    height: 5vh;
-    margin-top: 1%;
+#add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: 50%;
 }
 
-#social-links
-{
+#add1 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+#social-links {
     width: 50%;
-    height: 5vh;
-    margin-left: 25%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#social-links h2 {
+    text-align: center;
+    font-size: 2em;
     margin-top: 5%;
+    color: #333;
 }
 
 #social-links input {
-    width: 100%;
+    width: 80%;
     height: 5vh;
-    margin-top: 1%;
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
 }
 
-
-
-#downloadButton 
-{
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 4px;
+#social-links label {
+    margin-top: 5%;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
 }
 
-#socialbutton
-{
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 4px;
-
+#downloadButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
-
+#social-links button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
