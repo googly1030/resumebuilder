@@ -235,17 +235,176 @@ function saveSocialLinks() {
 document.querySelector('#social-links button').addEventListener('click', saveSocialLinks);
 
 
-// Function to download the resume in PDF
 function downloadResume() {
-  const resumeHTML = document.querySelector('#download').innerHTML;
-  const resumeBlob = new Blob([resumeHTML], { type: 'text/html' });
-  const downloadLink = document.createElement('a');
-  downloadLink.href = URL.createObjectURL(resumeBlob);
-  downloadLink.download = 'resume.html';
-  downloadLink.click();
+  const fullName = document.querySelector('input[name="Full name"]').value;
+  const mobileNumber = document.querySelector('input[name="Mobile Number"]').value;
+  const dob = document.querySelector('input[name="DOB"]').value;
+  const title = document.querySelector('input[name="Title"]').value;
+  const email = document.querySelector('input[name="Email"]').value;
+  const address = document.querySelector('textarea[name="address"]').value;
+
+  let educationHTML = '<h2>Education</h2>';
+  for (const edu of resume.education) {
+    educationHTML += `
+      <p>Institute: ${edu.instituteName}</p>
+      <p>State: ${edu.state}</p>
+      <p>Degree: ${edu.degree}</p>
+      <p>Field of Study: ${edu.fieldOfStudy}</p>
+      <p>Start Date: ${edu.startDate}</p>
+      <p>Percentage/CGPA: ${edu.percentageCGPA}</p>
+    `;
+  }
+
+  let workExpHTML = '<h2>Work Experience</h2>';
+  for (const exp of resume.workExperience) {
+    workExpHTML += `
+      <p>Employer: ${exp.employer}</p>
+      <p>Job Title: ${exp.jobTitle}</p>
+      <p>Start Date: ${exp.startDate}</p>
+      <p>State: ${exp.state}</p>
+      <p>Description: ${exp.description}</p>
+    `;
+  }
+
+  let skillsHTML = '<h2>Skills</h2>';
+  if (resume.skills.length > 0) {
+    skillsHTML += '<ul>';
+    for (const skill of resume.skills) {
+      skillsHTML += `<li>${skill}</li>`;
+    }
+    skillsHTML += '</ul>';
+  }
+
+  let achievementsHTML = '';
+  if (resume.achievements !== '') {
+    achievementsHTML = `<h2>Achievements</h2><p>${resume.achievements}</p>`;
+  }
+
+  let projectsHTML = '<h2>Projects</h2>';
+  for (const proj of resume.projects) {
+    projectsHTML += `
+      <p>Project Title: ${proj.projectTitle}</p>
+      <p>Project URL: ${proj.projectURL}</p>
+      <p>Project Description: ${proj.projectDescription}</p>
+    `;
+  }
+
+  let socialLinksHTML = '';
+  if (resume.socialLinks.github || resume.socialLinks.linkedIn) {
+    socialLinksHTML = '<h2>Social Links</h2>';
+    if (resume.socialLinks.github) {
+      socialLinksHTML += `<p>Github: ${resume.socialLinks.github}</p>`;
+    }
+    if (resume.socialLinks.linkedIn) {
+      socialLinksHTML += `<p>LinkedIn: ${resume.socialLinks.linkedIn}</p>`;
+    }
+  }
+
+  const resumeHTML = `
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Resume</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff9f9;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      h2 {
+        color: #db75b4;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0;
+        margin-bottom: 5px;
+        padding-top: 3%;
+      }
+      .basicinfo{
+        border: 1px solid black;
+        padding: 2%;
+        margin-bottom: 2%;
+      }
+        .skills{
+            border: 1px solid black;
+            padding: 2%;
+            margin-bottom: 2%;
+        }
+        .education{
+            border: 1px solid black;
+            padding: 2%;
+            margin-bottom: 2%;
+        }
+    .workexp{
+      border: 1px solid black;
+      padding: 2%;
+      margin-bottom: 2%;
+  }
+  .achive{
+    border: 1px solid black;
+    padding: 2%;
+    margin-bottom: 2%;
 }
+.project{
+  border: 1px solid black;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.social{
+  border: 1px solid black;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+    </style>
+  </head>
+  <body>
+ 
+    <div id="download" class="container mt-5">
+      <div class="basicinfo">   
+        <h2>Basic Information</h2>
+        <p>Name: ${fullName}</p>
+        <p>Mobile: ${mobileNumber}</p>
+        <p>DOB: ${dob}</p>
+        <p>Email: ${email}</p>
+        <p>Title: ${title}</p>
+        <p>Address: ${address}</p>
+      </div>
+      <div class="education">
+      ${educationHTML}
+      </div>
+      <div class="workexp">
+      ${workExpHTML}
+      </div>
+      <div class="skills">
+        ${skillsHTML}
+      </div>
+      <div class="achive">
+        ${achievementsHTML}
+      </div>
+      <div class="project">
+      ${projectsHTML}
+    </div>
+      <div class="social">
+        ${socialLinksHTML}
+      </div>
+    </div>
+  </body>
+  </html>
+  
+  `;
 
-
-document.querySelector('#downloadButton').addEventListener('click', downloadResume);
-
-
+  const blob = new Blob([resumeHTML], { type: 'text/html' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'resume.html';
+  link.click();
+}
+document.getElementById('downloadButton').addEventListener('click', downloadResume);
