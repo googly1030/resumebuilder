@@ -12,13 +12,16 @@ Resume Builder is a web application that allows users to create and download the
 - **Projects:** Users can add their projects by entering the project title, project URL, and project description.
 - **Social Links:** Users can provide links to their GitHub and LinkedIn profiles.
 
-## Usage
+![Screenshot (3)](https://github.com/googly1030/resumebuilder/assets/95157270/7249b758-72ba-4130-8640-050452da62ea)
 
-1. Start the development server: `npm start`
-2. Open your web browser and visit: `http://localhost:3000`
-3. Fill in the required information and save each section.
-4. Use the navigation buttons to switch between sections.
-5. Click the "Download Resume" button to generate and download your resume in HTML format.
+
+## Usage
+- Fill in the required information and save each section. 
+ 
+-  Use the navigation buttons to switch between sections.
+ 
+-  Click the "Download Resume" button to generate and download your resume in HTML format.
+
 
 ## Technologies Used
 
@@ -37,6 +40,7 @@ Contributions are welcome! If you would like to contribute to this project, plea
 5. Submit a pull request explaining your changes.
 
 ## License
+
 
 This project is licensed under the [MIT License](LICENSE).
 
